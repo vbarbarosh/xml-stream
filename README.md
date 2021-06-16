@@ -1,3 +1,23 @@
+Version of xml-stream with https://stackoverflow.com/a/60042032/1478566
+
+    xml.on('endElement', function(name) {
+
+      //xml-stream code
+
+      if (self._bufferLevel === 0 && self._emitData) {
+        emitEnd.call(self, name);
+      }
+
+      //my override <<-----
+      if (prev.path.split('/').length == 2) { //the split length check give me the first child
+        self.emit('endItem', val);
+      }
+      //my override end
+
+      curr = prev;
+      this._collect = curr.collect;
+    });
+
 # XmlStream
 
 XmlStream is a Node.js XML stream parser and editor, based on
