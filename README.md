@@ -18,6 +18,10 @@ Version of xml-stream with https://stackoverflow.com/a/60042032/1478566
       this._collect = curr.collect;
     });
 
+## Installation
+
+     npm install vbarbarosh/xml-stream --cache /tmp/nocache
+
 # XmlStream
 
 XmlStream is a Node.js XML stream parser and editor, based on
