@@ -1,5 +1,5 @@
 {
-  "name": "@vbarbarosh/xml-stream",
+  "name": "xml-stream",
   "description": "XML stream to JavaScript object converter based on Expat.",
   "keywords": [
     "xml",
